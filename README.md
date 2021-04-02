@@ -161,3 +161,31 @@ package:
   - size: int in bytes
   - created_at: ts
   - remark: string
+
+
+
+## Installation
+
+AppHub requires the following dependencies:
+
+- Node.js >= 12
+- Go >= 1.15.5
+- Yarn >= 1.22.5
+- sqlite >= 3.32.3
+
+### Development
+
+1. Clone this repo
+
+```
+git clone git@github.com:youxitech/AppHub.git && cd AppHup
+```
+
+2. Build assets, db migrations and run
+
+```
+make build-ui
+make bindata
+make install
+make rundev
+```
